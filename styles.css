@@ -1,0 +1,194 @@
+/*   CSS Reset */
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+
+/* Scrollbar avoiding */
+
+html {
+    overflow: hidden;
+
+}
+
+/* Main Container of Cards */
+
+.main_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 80vh;
+    margin: 0 auto;
+    justify-content: center;
+    background: linear-gradient(rgba(8, 104, 240, 0.3), rgb(8, 104, 240, 0.6));
+    align-items: space-evenly;
+    padding: 20px;
+    /* outline:2px solid red; */
+    gap: 20px;
+}
+
+/* Div Card */
+
+div {
+    /* width:200px; */
+    min-height: auto;
+    max-height: 100%;
+    border: 1px dotted black;
+    flex-basis: 22.7%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    background: whitesmoke;
+    border-radius: 10px;
+    font-size: 30px;
+    flex-grow: 1;
+}
+
+
+/* Footer Section  */
+
+footer {
+    background: rgba(8, 104, 240, 0.6);
+    width: 100vw;
+    height: 20vh;
+
+}
+
+/* Color Card Classes */
+
+/* 1 */
+.tomato {
+    background-color: tomato;
+}
+
+/* 2 */
+.orange {
+    background-color: orange
+}
+
+/* 3 */
+.dodgerBlue {
+    background-color: DodgerBlue;
+}
+
+/* 4 */
+.mediumSeaGreen {
+    background-color: mediumseagreen;
+}
+
+/* 5 */
+.gray {
+    background-color: rgb(54, 244, 12);
+}
+
+/* 6 */
+.slateBlue {
+    background-color: slateblue;
+}
+
+/* 7 */
+.violet {
+    background-color: violet;
+}
+
+/* 8 */
+.olive {
+    background-color: olive;
+}
+
+/* 9 */
+.navy {
+    background-color: navy;
+}
+
+/* 10 */
+.brown {
+    background-color: brown;
+}
+
+/* 11 */
+.peachpuff {
+    background-color: peachpuff;
+}
+
+/* 12 */
+.yellow {
+    background-color: yellow;
+}
+
+/* Hidden */
+
+.hidden {
+    background-color: black;
+}
+
+/* Off Card */
+
+.off {
+    background-color: rgba(245, 245, 245, 0.107);
+    border: none;
+    color: rgba(0, 0, 0, 0.207);
+
+
+}
+
+
+
+
+
+section {
+
+   
+    height: 20vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 30px 0 100px;
+    gap: 20px;
+
+}
+
+.start-button,
+.reset-button {
+    height: 7vh;
+    flex-basis: 15%;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0;
+
+}
+
+.stop-watch {
+    height: 12.5vh;
+    flex-basis: 23%;
+    flex-grow: 0;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    font-size: 10px;
+    right: 70px;
+    position: relative;
+    font-size: 20px;
+    bottom: 7px;
+    background: transparent;
+}
+
+.off_2 {
+    background-color: transparent;
+    border: none;
+    color: transparent;
+
+
+}
