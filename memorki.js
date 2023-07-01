@@ -17,6 +17,7 @@ let gameTime = 0;
 let endTime = 0;
 let tenMilliseconds = 0;
 let seconds = 0;
+let minutes = 0;
 let displayTimer = document.querySelector(".stop-watch");
 let interwalStopwatch = "";
 
@@ -102,8 +103,12 @@ const stopWatch = () => {
         tenMilliseconds = 0;
         seconds++
     }
+    if(seconds/60 ===1){
+    seconds = 0 ;
+    minutes++
+    }
 
-    displayTimer.innerText = `${seconds}:${tenMilliseconds}`;
+    displayTimer.innerText = `${minutes}:${seconds}:${tenMilliseconds}`;
 }
 
 
